@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class move_left : MonoBehaviour
+public class move_horizontal : MonoBehaviour
 { 
 
     // Update is called once per frame
