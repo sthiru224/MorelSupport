@@ -4,20 +4,29 @@ using UnityEngine;
 
 public class move_left : MonoBehaviour
 {
-     public Rigidbody rigidbody2d;
-     public float moveSpeed;
+    public Rigidbody2D rigidbody2d;
+	public float moveSpeed = 3f;
+	float velocityX;
+	float velocityY;
+    bool facingRight = true;
+
      
     // Start is called before the first frame update
     void Start()
     {
-        
+		rigidbody2d = GetComponent<Rigidbody2D>();    
     }
 
     // Update is called once per frame
     void Update()
     {
-    if (Input.GetKey(KeyCode.A))
+		float horizontal = Input.GetAxis("Horizontal");
 
-        rigidbody2d.velocity = transform.left * moveSpeed;
+		HandleMovement();
     }
+
+    void HandleMovement()
+	{
+		rigidbody2d.velocity = Vector2.left;
+	}
 }
