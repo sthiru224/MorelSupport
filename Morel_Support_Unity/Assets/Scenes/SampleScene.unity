@@ -319,5 +319,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 0}
-  speed: 0
+  speed: 50
   rotationSpeed: 0

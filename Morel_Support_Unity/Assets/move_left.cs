@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class move_left : MonoBehaviour
 {
-     public Rigidbody body;
-     public float speed;
-     public float rotationSpeed;
+     public Rigidbody rigidbody2d;
+     public float moveSpeed;
+     
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +16,8 @@ public class move_left : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+    if (Input.GetKey(KeyCode.A))
+
+        rigidbody2d.velocity = transform.left * moveSpeed;
     }
 }
