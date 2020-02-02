@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,7 +14,7 @@ public class move_horizontal : MonoBehaviour
 	void Awake()
 	{
 		rBody = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        
 	}
 
 	// Update is called once per frame
@@ -26,14 +26,14 @@ public class move_horizontal : MonoBehaviour
             rBody.velocity = new Vector2(-1.0f, 0.0f);
             moving = true;
             t = 0.0f;
-            spriteRenderer.sprite = Resources.Load<Sprite>("Mushroom Friend Run");
+            
         }
     if (Input.GetKey(KeyCode.A))
         {
             rBody.velocity = new Vector2(-1.0f, 0.0f);
             moving = true;
             t = 0.0f;
-            spriteRenderer.sprite = Resources.Load<Sprite>("Mushroom Friend Run");
+            
             
         }
     if (Input.GetKey(KeyCode.RightArrow))
