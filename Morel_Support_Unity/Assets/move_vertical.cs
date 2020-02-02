@@ -21,7 +21,7 @@ public class move_vertical : MonoBehaviour
     {
 		if (Input.GetKey(KeyCode.UpArrow))
         {
-            rBody.velocity = new Vector2(0.0f, 2.0f);
+            rBody.velocity = new Vector2(0.0f, 0.5f);
             moving = true;
             t = 0.0f;
         }
