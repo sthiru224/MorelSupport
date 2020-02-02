@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 297163428}
   - component: {fileID: 297163433}
   - component: {fileID: 297163434}
+  - component: {fileID: 297163435}
   m_Layer: 0
   m_Name: Mushroom Friend Idle
   m_TagString: Untagged
@@ -376,6 +377,18 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.16, y: 0}
   - {x: 0.16, y: 0}
+--- !u!114 &297163435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297163427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a906bef10434dca94ec850d0e57969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,6 +484,7 @@ GameObject:
   - component: {fileID: 1267940534}
   - component: {fileID: 1267940533}
   - component: {fileID: 1267940536}
+  - component: {fileID: 1267940537}
   m_Layer: 0
   m_Name: placeholder
   m_TagString: Untagged
@@ -575,6 +589,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 15
+--- !u!114 &1267940537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267940532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a906bef10434dca94ec850d0e57969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1464809127
 GameObject:
   m_ObjectHideFlags: 0
