@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class logchanges : MonoBehaviour
+public class logchanges2 : MonoBehaviour
 {
 	// Start is called before the first frame update
 	public Sprite Alive;
@@ -15,7 +15,7 @@ public class logchanges : MonoBehaviour
 
 	private void OnTriggerEnter2D()
 	{
-		Debug.Log("hehyyyyyy");
+		Debug.Log("HEY NUMBER 2");
 
 		Inside = true;
 	}
@@ -28,9 +28,9 @@ public class logchanges : MonoBehaviour
 			if (this.gameObject.GetComponent<SpriteRenderer>().sprite = Alive)
 			{
 				this.gameObject.GetComponent<SpriteRenderer>().sprite = Dead;
-				
+
 			}
 		}
-		}
 	}
+}
 
