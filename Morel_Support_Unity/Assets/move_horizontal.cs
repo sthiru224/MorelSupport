@@ -18,7 +18,13 @@ public class move_horizontal : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
-		if (Input.GetKey(KeyCode.LeftArrow))
+		if (Input.GetKey(KeyCode.LeftArrow))  
+        {
+            rBody.velocity = new Vector2(-1.0f, 0.0f);
+            moving = true;
+            t = 0.0f;
+        }
+    if (Input.GetKey(KeyCode.A))
         {
             rBody.velocity = new Vector2(-1.0f, 0.0f);
             moving = true;
@@ -27,6 +33,12 @@ public class move_horizontal : MonoBehaviour
     if (Input.GetKey(KeyCode.RightArrow))
         {
             rBody.velocity = new Vector2(1.0f, 0.0f);
+            moving = true;
+            t = 0.0f;
+        }
+    if (Input.GetKey(KeyCode.D))
+        {
+            rBody.velocity = new Vector2(-1.0f, 0.0f);
             moving = true;
             t = 0.0f;
         }
