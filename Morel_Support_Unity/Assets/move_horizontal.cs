@@ -17,6 +17,7 @@ public class move_horizontal : MonoBehaviour
 
 	// Update is called once per frame
 	void Update()
+  // Currently unable to stop movement once key pressed
     {
 		if (Input.GetKey(KeyCode.LeftArrow))  
         {
@@ -38,7 +39,7 @@ public class move_horizontal : MonoBehaviour
         }
     if (Input.GetKey(KeyCode.D))
         {
-            rBody.velocity = new Vector2(-1.0f, 0.0f);
+            rBody.velocity = new Vector2(1.0f, 0.0f);
             moving = true;
             t = 0.0f;
         }
